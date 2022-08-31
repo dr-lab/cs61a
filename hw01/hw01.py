@@ -44,8 +44,8 @@ def two_of_three(i, j, k):
     >>> two_of_three(5, 5, 5)
     50
     """
-    return sum([m*m for m in sorted([i, j, k])[:2]])
-
+    #return sum([m*m for m in sorted([i, j, k])[:2]])
+    return i*i + j*j + k*k - max(i,j,k) * max(i,j,k)
 
 def two_of_three_syntax_check():
     """Check that your two_of_three code consists of nothing but a return statement.
